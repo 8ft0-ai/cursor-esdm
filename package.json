@@ -1,0 +1,20 @@
+{
+  "name": "rdf-shacl-visualizer",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@9.0.0",
+  "workspaces": [
+    "web",
+    "engine",
+    "e2e",
+    "samples"
+  ],
+  "scripts": {
+    "dev": "pnpm --filter web dev",
+    "build": "pnpm -r build",
+    "preview": "pnpm --filter web preview",
+    "test": "pnpm -r test",
+    "e2e": "pnpm --filter e2e test",
+    "validate": "pnpm --filter engine validate"
+  }
+}

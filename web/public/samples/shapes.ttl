@@ -1,0 +1,17 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix ex: <http://example.com/> .
+
+ex:CustomerShape a sh:NodeShape ;
+  sh:targetClass ex:Customer ;
+  sh:property [
+    sh:path ex:hasAccount ;
+    sh:minCount 1 ;
+  ] .
+
+ex:AccountBalanceShape a sh:NodeShape ;
+  sh:targetClass ex:Account ;
+  sh:property [
+    sh:path ex:balance ;
+    sh:datatype <http://www.w3.org/2001/XMLSchema#decimal> ;
+    sh:minInclusive 0 ;
+  ] .

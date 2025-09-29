@@ -1,0 +1,9 @@
+declare module 'react';
+declare module 'react-dom/client';
+declare module 'react-router-dom';
+declare module 'cytoscape';
+declare module 'vite';
+declare module '@vitejs/plugin-react';
+declare module 'vite-plugin-pwa';
+declare module 'node:path';
+declare module 'node:url';

@@ -1,0 +1,5 @@
+packages:
+  - web
+  - engine
+  - e2e
+  - samples
