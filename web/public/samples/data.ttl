@@ -1,0 +1,9 @@
+@prefix ex: <http://example.com/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+ex:Cust123 a ex:Customer ;
+  foaf:name "Alice" ;
+  ex:hasAccount ex:AcctA .
+
+ex:AcctA a ex:Account ;
+  ex:balance "-20"^^<http://www.w3.org/2001/XMLSchema#integer> .

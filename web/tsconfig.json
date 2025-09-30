@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.node.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "moduleResolution": "bundler",
+    "baseUrl": ".",
+    "paths": {
+      "engine": ["../engine/src/index.ts"]
+    }
+  },
+  "include": ["src"]
+}
